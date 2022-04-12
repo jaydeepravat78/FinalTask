@@ -12,8 +12,17 @@
   <user username="admin" password="admin" roles="tomcat, manager-gui, admin-gui, manager-script"/>
   ```
   
-- mvn command to run
-  ``` mvn tomcat7:deploy ```
+- mvn commands
+   - to run
+     - ``` mvn tomcat7:deploy ```
+   - pmd
+     - ``` mvn pmd:pmd ```
+   - cpd
+     - ``` mvn pmd:cpd ```
+   - spotbug
+     - for xml file:  ``` mvn com.github.spotbugs:spotbugs-maven-plugin:spotbugs ``` 
+     - for GUI: ``` mvn com.github.spotbugs:spotbugs-maven-plugin:gui ``` 
+     
   
 - user_management database
   - users (table)
